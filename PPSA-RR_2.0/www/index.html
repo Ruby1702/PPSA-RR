@@ -1,0 +1,68 @@
+<html>
+	<head>
+        <title>CPU Scheduling Algorithm - Final Project for IOS102A</title>
+		<style>
+			body {
+				font-family : Arial;
+			}
+			td {
+				padding : 0.3em;
+				text-align : center;
+			}
+			thead {
+				font-weight : bold;
+			}
+            .gantt_block {
+                text-align: center;
+                padding: 0.4em;
+                height: 5em;
+                float: left;
+                display: block;
+                color: whitesmoke;
+                font-weight: bold;
+            }
+            table {
+                border-collapse : collapse;
+            }
+            .bubble {
+                -webkit-box-shadow: 0px 0px 21px 1px rgba(0,0,0,0.84);
+                -moz-box-shadow: 0px 0px 21px 1px rgba(0,0,0,0.84);
+                box-shadow: 0px 0px 21px 1px rgba(0,0,0,0.84);
+            }
+		</style>
+		<script src="js/jquery-3.1.0.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                
+                $('#methods').change(function(){ location.href = $(this).val(); });
+            })
+        </script>
+	</head>
+	<body>
+        <div style="margin-top: 8em;">
+            <center>
+            <font color="violet">
+                <h1><u>CPU Scheduling Algorithms</h1></u>
+                <h2>Final Project in OS</h2>
+				<h3>BSIT III-A</h2>
+                <br/>
+                Submitted by
+                <h4>Ruby Ann De Vera</h4>
+                <h4>Angelica Cuares</h4>
+                <h4>Marimar Escaño</h4>
+                <h4>Jessabil Palma</h4>
+				<h4>Marjorie Vinuya</h4>
+				</font>
+                <div>
+                <font color="blue">
+                    Select Scheduling Method<br/>
+                    <select id="methods">
+                        <option value="PriorityNonPreemptive.html">PriorityNonPreemptive</option>
+                        <option value="RoundRobin.html">Round Robin</option>
+                    </select>
+                    </font>
+                </div>
+            </center>
+        </div>
+	</body>
+</html>
